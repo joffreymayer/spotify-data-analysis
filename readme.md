@@ -20,29 +20,6 @@ I will create a virtual environment for this project and work form there:
 
 That's it for the installation of the virtual environment!
 
----
-#### <u>Bemerkung</u>: Achtung bei der Änderung des Projekt-Pfades!
----
-
-**Wenn du den Namen eines Ordners änderst, der auf dem Pfad des `venv` liegt, dann wirst du die <ins>falsche </ins> Python-Version runnen (bei mir war es `Python 2.7.16` statt `Python 3.8.2`, welche die korrekte wäre!**
-
-- <u>To fix this</u>: 
-
-    1) Follow this path: `path_to_your_env/bin/activate`, während du dich in deinem Projekt-Ordner befindest (= Annahme: der Projekt-Ordner sollte dein `wd` sein).
-    2) Öffne die `activate`-Datei. Dort musst du folgende Zeile ändern:
-    ```
-    VIRTUAL_ENV="/Users/jomaye/Documents/Programming/Python/projects/libraries-to-try/statsmodels/env-statmodels"
-    ```
-    zu...:
-    ```
-    VIRTUAL_ENV="/Users/jomaye/Documents/Programming/Python/projects/data-science/statsmodels/env-statmodels"
-    ```
-
-_Wie du anhand des obigen Beispieles siehst, war das Problem, dass ich **den Ordner** `libraries-to-try` auf `data-science` umbenannt hatte. Somit war der **Pfad** zum `venv` falsch und hat dazu geführt, dass der Computer automatisch auf die Default-Python-Version `2.7.16`, welche auf meinem Computer installiert ist, gewechselt ist (statt auf die `Python 3.8.2` Version, die ich eigentlich wollte...)_.
-
-- <u>To check if it worked</u>: `python --version` im Terminal eingeben. 
-    - Wenn nun `Python 3.8.2` steht, dann hast du das Problem gelöst! =)
-
 ### Update `pip`
 
 Before I start with the project, I will make sure that my `pip`-installer is up-to-date. **I am currently using the version `22.2.2` (Stand: 28.09.2022) for this project**.
