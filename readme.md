@@ -36,14 +36,14 @@ Before I start with the project, I will make sure that my `pip`-installer is up-
 Now you can install the package:
 
 1) `pip install jupyter`
-    > For the **exact** Version I used, run the following command instead: `pip install jupyter==1.0.0`
-    > To run a Jupyter Notebook - after your `venv` has been activated - simply use `jupyter notebook` in your terminal.
+    - For the **exact** Version I used, run the following command instead: `pip install jupyter==1.0.0`
+    - To run a Jupyter Notebook - after your `venv` has been activated - simply use `jupyter notebook` in your terminal.
 2) `pip install pandas`
-    > I need this package to load `.csv`-files, as well as to make some data processing.
+    - I need this package to load `.csv`-files, as well as to make some data processing.
 3) `pip install spotipy`
-    > I need this package to make a connection to the Spotify-API
+    - I need this package to make a connection to the Spotify-API
 4) `pip install seaborn matplotlib geopy folium holoviews`
-    > Those are all the packages I needed for data visualization purposes. 
+    - Those are all the packages I needed for data visualization purposes. 
 
 
 ## Roadmap
